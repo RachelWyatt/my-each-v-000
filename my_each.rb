@@ -3,4 +3,5 @@ def my_each(array)
   array.collect do |x|
     return_array << yield(x)
   end
+  return_array
 end
