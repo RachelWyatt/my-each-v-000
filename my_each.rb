@@ -1,5 +1,6 @@
 def my_each(array)
-  while array.length < 4
-    yield if block_given?
+  return_array = []
+  array.each do 
+    return_array << yield
   end
 end
